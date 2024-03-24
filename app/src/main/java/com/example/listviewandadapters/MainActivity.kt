@@ -1,7 +1,6 @@
 package com.example.listviewandadapters
 
 import android.os.Bundle
-import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = adapterForListView
 
         listView.setOnItemClickListener { parent, view, position, id ->
-            val text = "clicked on " + (view as TextView).text.toString()
+            val text = (view as TextView).text.toString()
             Toast.makeText(applicationContext , "clicked on $text" , Toast.LENGTH_SHORT).show()
         }
     }
