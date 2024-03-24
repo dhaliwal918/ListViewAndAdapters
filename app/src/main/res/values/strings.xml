@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListViewAndAdapters</string>
+    <string name="task_to_be_done">Task to be Done</string>
+</resources>
